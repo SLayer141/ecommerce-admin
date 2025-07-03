@@ -11,10 +11,8 @@
     email
     #emailInput="ngModel"
   />
-  <div *ngIf="emailInput.invalid && emailInput.touched" style="color: red;">
-    <div *ngIf="emailInput.errors?.['required']">Email is required.</div>
-    <div *ngIf="emailInput.errors?.['email']">Please enter a valid email.</div>
-  </div>
+  <div *ngIf="emailInput.errors?.required">Email is required.</div>
+  <div *ngIf="emailInput.errors?.email">Please enter a valid email.</div>
 
   <!-- Password -->
   <label>Password:</label>

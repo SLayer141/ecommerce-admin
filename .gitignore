@@ -11,6 +11,7 @@
 /Client/build/
 /Client/dist/
 /Server/dist/
+/Server/uploads/
 
 # System files
 .DS_Store

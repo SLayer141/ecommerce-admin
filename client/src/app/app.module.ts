@@ -7,10 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule,Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { ProductTableComponent } from './product-table/product-table.component';
+import { ProductFormComponent } from './product-form/product-form.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'product-table', component: ProductTableComponent },
+  { path: 'product-form/:id', component: ProductFormComponent },
+  { path: 'product-form', component: ProductFormComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
 
@@ -19,6 +24,8 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     SignupComponent,
+    ProductTableComponent,
+    ProductFormComponent,
     
   ],
   imports: [

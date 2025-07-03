@@ -23,7 +23,7 @@ export class LoginComponent {
     this.http.post('http://localhost:3000/api/login', userData).subscribe(
   (res: any) => {
     alert('Login successful!');
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/product-table']);
   },
   (err) => {
     this.errorMessage = err.error.message || 'Login failed';
